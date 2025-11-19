@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Notification Template Preview</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link href="css/normalize.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+	<script src="js/mode-switch.js" defer></script>
+</head>
+<body>
+	<div class="app">
+		<header class="header">
+			<div class="header__inner">
+				<div class="header__brand">
+					<div class="header__logo"></div>
+					<div class="header__title-group">
+						<span class="header__title">Notification Studio</span>
+					</div>
+				</div>
+				<div class="header__actions">
+					<button class="btn btn--outline" type="button">
+						<span>Docs</span>
+					</button>
+				</div>
+			</div>
+		</header>
+		<main class="main">
+			<div class="main__container">
+				<h1 class="visually-hidden">Notification Template Preview</h1>
+				<section class="controls">
+					<div class="controls__title-group">
+						<h2 class="controls__title">Notification Template Preview</h2>
+						<p class="controls__subtitle">Create and preview rich notification templates</p>
+					</div>
+					<div class="controls__group">
+						<div class="field">
+							<div class="select-box">
+								<ul class="options-container">
+									<li class="option">
+										<input class="radio" type="radio" id="project_1" name="project-selector" value="project_1">
+										<label for="project_1">project_1</label>
+									</li>
+									<li class="option">
+										<input class="radio" type="radio" id="project_2" name="project-selector" value="project_2">
+										<label for="project_2">project_2</label>
+									</li>
+									<li class="option">
+										<input class="radio" type="radio" id="project_3" name="project-selector" value="project_3">
+										<label for="project_3">project_3</label>
+									</li>
+								</ul>
+								<span class="selected selected--project">Select a project</span>
+							</div>
+						</div>
+						<div class="field">
+							<div class="select-box">
+								<ul class="options-container">
+									<li class="option">
+										<input class="radio" type="radio" id="template-black-friday" name="template-selector" value="black-friday">
+										<label for="template-black-friday">Black Friday</label>
+									</li>
+									<li class="option">
+										<input class="radio" type="radio" id="template-welcome" name="template-selector" value="welcome">
+										<label for="template-welcome">Welcome message</label>
+									</li>
+									<li class="option">
+										<input class="radio" type="radio" id="template-deposit-bonus" name="template-selector" value="deposit-bonus">
+										<label for="template-deposit-bonus">Deposit bonus notification</label>
+									</li>
+									<li class="option">
+										<input class="radio" type="radio" id="template-trading-alert" name="template-selector" value="trading-alert">
+										<label for="template-trading-alert">Trading alert</label>
+									</li>
+									<li class="option">
+										<input class="radio" type="radio" id="template-account-update" name="template-selector" value="account-update">
+										<label for="template-account-update">Account update</label>
+									</li>
+								</ul>
+								<span class="selected selected--template">Select a template</span>
+							</div>
+						</div>
+					</div>
+					<div class="controls__right">
+						<div class="segmented">
+							<button class="segmented__btn segmented__btn--active" type="button">Push</button>
+							<button class="segmented__btn" type="button">In‑app</button>
+							<button class="segmented__btn" type="button">Email</button>
+						</div>
+						<div class="theme-switcher">
+							<button class="theme-switcher__btn" type="button" data-theme="light" aria-label="Switch to light theme">
+								<svg class="theme-switcher__icon" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<circle cx="8" cy="8" r="3.5" stroke="currentColor" stroke-width="1.5" fill="none" />
+									<path d="M8 1v2M8 13v2M15 8h-2M3 8H1M13.314 2.686l-1.414 1.414M4.1 11.9l-1.414 1.414M13.314 13.314l-1.414-1.414M4.1 4.1L2.686 2.686" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+								</svg>
+							</button>
+							<button class="theme-switcher__btn theme-switcher__btn--active" type="button" data-theme="dark" aria-label="Switch to dark theme">
+								<svg class="theme-switcher__icon" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M12.5198465,12.19707 C10.1178846,14.6009767 6.20693689,14.6009767 3.80295231,12.19707 C1.3990159,9.79306691 1.3990159,5.88221561 3.80295231,3.47927207 C4.43909295,2.84419879 5.21460758,2.35957435 6.10652404,2.04355472 C6.38748736,1.94521396 6.69855046,2.01648934 6.907178,2.2261738 C7.11792457,2.43686961 7.18915267,2.7478807 7.0898475,3.02681787 C6.48582934,4.73044397 6.89720896,6.57450184 8.16139941,7.83872484 C9.42361533,9.10184019 11.267696,9.51225154 12.9733177,8.91026352 C13.2522583,8.81095958 13.5642846,8.88223496 13.7739716,9.09293076 C13.9847182,9.30155573 14.0549349,9.61362632 13.9555816,9.89357483 C13.6415326,10.7854321 13.155939,11.5609372 12.5198465,12.19707 Z" stroke="currentColor" stroke-width="1.5" fill="none" />
+								</svg>
+							</button>
+						</div>
+					</div>
+				</section>
+				<section class="layout">
+					<div class="card">
+						<div class="card__header">
+							<div class="card__title-group">
+								<h2 class="card__title">Compose message</h2>
+								<p class="card__subtitle">Localize copy and assets before sending a test</p>
+							</div>
+							<span class="badge badge--ghost card__actions">
+								<span>Locales</span>
+							</span>
+						</div>
+						<form action="#" class="editor" autocomplete="off">
+							<div class="editor__fields">
+								<div class="field field--simple">
+									<label class="field__label" for="locale-selector">Locale</label>
+									<div class="select-box">
+										<ul class="options-container">
+											<li class="option">
+												<input class="radio" type="radio" id="ar" name="locale" value="ar">
+												<label for="ar">Arabic &ndash; AR</label>
+											</li>
+											<li class="option">
+												<input class="radio" type="radio" id="bg" name="locale" value="bg">
+												<label for="bg">Bulgarian &ndash; BG</label>
+											</li>
+											<li class="option">
+												<input class="radio" type="radio" id="hr" name="locale" value="hr">
+												<label for="hr">Croatian &ndash; HR</label>
+											</li>
+											<li class="option">
+												<input class="radio" type="radio" id="cz" name="locale" value="cz">
+												<label for="cz">Czech &ndash; CZ</label>
+											</li>
+											<li class="option">
+												<input class="radio" type="radio" id="dk" name="locale" value="dk">
+												<label for="dk">Danish &ndash; DK</label>
+											</li>
+											<li class="option">
+												<input class="radio" type="radio" id="nl" name="locale" value="nl">
+												<label for="nl">Dutch &ndash; NL</label>
+											</li>
+											<li class="option">
+												<input class="radio" type="radio" id="en" name="locale" value="en" checked>
+												<label for="en">English &ndash; EN</label>
+											</li>
+										</ul>
+										<span class="selected selected--locale">Select a locale</span>
+									</div>
+								</div>
+								<div class="field field--simple">
+									<label class="field__label" for="push-title">Title</label>
+									<input type="text" class="editor__input" id="push-title" name="push-title" placeholder="~40-50 characters" required>
+								</div>
+								<div class="field field--simple">
+									<label class="field__label" for="push-body">Body</label>
+									<textarea rows="6" class="editor__textarea" id="push-body" name="push-body" placeholder="~150 characters for the body text" required></textarea>
+								</div>
+								<div class="editor__hint">
+									<span>
+										Hints:
+										<code>{"{first_name}"}</code>,
+										<code>{"{account_type}"}</code>,
+										<code>{"{account_type}"}</code>
+									</span>
+								</div>
+								<div class="field field--simple">
+									<label class="field__label" for="img-url">Image URL</label>
+									<div class="editor__image-row">
+										<input type="url" class="editor__input" id="img-url" name="img-url" placeholder="e.g. https://domain.com/image.png">
+										<button class="btn btn--ghost btn--upload" type="button">
+											<span>Upload</span>
+										</button>
+									</div>
+								</div>
+								<div class="field field--simple">
+									<div class="editor__selects">
+										<div class="field">
+											<label class="field__label" for="user-selector">User</label>
+											<div class="select-box">
+												<ul class="options-container">
+													<li class="option">
+														<input class="radio" type="radio" id="user-1" name="user-selector" value="1" checked>
+														<label for="user-1">recipient1@domain.com</label>
+													</li>
+													<li class="option">
+														<input class="radio" type="radio" id="user-2" name="user-selector" value="2">
+														<label for="user-2">recipient2@domain.com</label>
+													</li>
+													<li class="option">
+														<input class="radio" type="radio" id="user-3" name="user-selector" value="3">
+														<label for="user-3">recipient3@domain.com</label>
+													</li>
+												</ul>
+												<span class="selected selected--user">Select test user</span>
+											</div>
+										</div>
+										<div class="field">
+											<label class="field__label" for="license-selector">License</label>
+											<div class="select-box">
+												<ul class="options-container">
+													<li class="option">
+														<input class="radio" type="radio" id="license-all" name="license-selector" value="all" checked>
+														<label for="license-all">ALL</label>
+													</li>
+													<li class="option">
+														<input class="radio" type="radio" id="license-asic" name="license-selector" value="asic">
+														<label for="license-asic">ASIC</label>
+													</li>
+													<li class="option">
+														<input class="radio" type="radio" id="license-ccstv" name="license-selector" value="ccstv">
+														<label for="license-ccstv">CCSTV</label>
+													</li>
+												</ul>
+												<span class="selected selected--license">Choose license</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="editor__footer">
+								<div class="editor__actions">
+									<button class="btn btn--ghost editor__btn editor__btn--save" type="button" name="save-draft">
+										<span>Save draft</span>
+									</button>
+									<button class="btn btn--primary editor__btn editor__btn--send" type="submit" name="send-test">
+										<span>Send test</span>
+									</button>
+								</div>
+								<div class="editor__reset">
+									<div class="editor__reset-hint">
+										<span>*You can clear the fields if needed</span>
+									</div>
+									<button class="btn btn--ghost editor__reset-btn" type="reset" name="reset-preview">
+										<span>Reset preview</span>
+									</button>
+								</div>
+							</div>
+						</form>
+					</div>
+					<div class="card">
+						<div class="preview__toolbar">
+							<div class="card__title-group">
+								<h2 class="card__title">Live preview</h2>
+								<p class="card__subtitle">Render message as it appears on device</p>
+							</div>
+							<div class="preview__device-toggle">
+								<button class="btn btn--ghost btn--active" type="button">
+									<span>iOS</span>
+								</button>
+								<button class="btn btn--ghost-muted" type="button">
+									<span>Android</span>
+								</button>
+							</div>
+						</div>
+						<div class="preview">
+							<div class="preview__inner">
+								<div class="mockup">
+									<div class="mockup__inner">
+										<img class="mockup__img" src="assets/iphone-mockup-push-dark.png" alt="iPhone mockup">
+										<div class="mockup__text">
+											<div class="mockup__text-inner">
+												<img class="mockup__icon" src="assets/ico-project-default.svg" alt="">
+												<div class="mockup__sender">
+													<span>sender</span>
+													<span>2m ago</span>
+												</div>
+												<p class="mockup__title">title</p>
+												<p class="mockup__body">body_text</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+			</div>
+		</main>
+	</div>
+	<script src="js/select-box.js"></script>
+	<script src="js/preview-update.js"></script>
+</body>
+</html>
